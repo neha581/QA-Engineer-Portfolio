@@ -1,7 +1,9 @@
 # QA-Engineer-Portfolio
 
 ## About Me
-I’m a QA Engineer with 7+ years of experience in manual and automated testing, working with tools like Selenium, Postman, and Appium. I’m passionate about ensuring the highest quality in every product I work on by utilizing industry-standard testing methodologies.
+QA Engineer with 7+ years of experience in manual and automated testing.
+working with tools like Selenium, Postman, and Appium. 
+Passionate about ensuring the quality in every product I work on by utilizing industry-standard testing methodologies.
 
 ## Skills & Tools
 - **Test Automation:** Selenium, Appium
