@@ -20,7 +20,7 @@ Global Shiksha is an educational platform offering innovative learning solutions
   - Identifying and resolving performance bottlenecks during peak sale events.
 
 ### Artifacts
-- [Test Plan](./Test-Plan.md)
+- [Test Plan](https://github.com/neha581/QA-Engineer-Portfolio/blob/main/Global-Shiksha/testplan.md)
 - [Test Cases](./Test-Cases.md)
 - [Bug Reports](./Bug-Reports.md)
 
