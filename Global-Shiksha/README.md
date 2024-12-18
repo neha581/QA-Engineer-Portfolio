@@ -22,5 +22,5 @@ Global Shiksha is an educational platform offering innovative learning solutions
 ### Artifacts
 - [Test Plan](https://github.com/neha581/QA-Engineer-Portfolio/blob/main/Global-Shiksha/testplan.md)
 - [Test Cases](https://github.com/neha581/QA-Engineer-Portfolio/blob/main/Global-Shiksha/test-cases.md)
-- [Bug Reports](./Bug-Reports.md)
+- [Bug Reports](https://github.com/neha581/QA-Engineer-Portfolio/blob/main/Global-Shiksha/bug-report.md)
 
