@@ -25,12 +25,12 @@ Passionate about ensuring the quality in every product I work on by utilizing in
 - **Tools Used:** Postman, SQL, JIRA
 
 ### SaaS Applications
-#### [CRM System](./CRM-System)
+#### [Reculta-Solutions](./Reculta-Solutions(SaaS-Application))
 - **Testing Type:** Web App Functional Testing
-- **Tools Used:** Selenium, Jenkins
+- **Tools Used:** Manual Testing, Selenium, Jenkins
   
 ### Mobile Applications
-#### [CRM System](./CRM-System)
+#### [PickMyWork](./PickMyWork)
 - **Testing Type:** Mobile App Functional Testing
 - **Tools Used:** Appium, Jenkins, Git
   
