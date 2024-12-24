@@ -123,3 +123,9 @@ Reculta is a Software-as-a-Service (SaaS) application designed to streamline and
 ## **Future Enhancements**
 - Develop mobile applications for better accessibility.
 - Introduce advanced analytics dashboards for enhanced placement insights.
+
+### Artifacts
+- [Test Plan](https://github.com/neha581/QA-Engineer-Portfolio/blob/main/Reculta-Solutions(SaaS-Application)/Test-Plan.md)
+- [Test Cases](https://github.com/neha581/QA-Engineer-Portfolio/blob/main/Reculta-Solutions(SaaS-Application)/Test-Cases.md)
+- [Bug Reports](https://github.com/neha581/QA-Engineer-Portfolio/blob/main/Reculta-Solutions(SaaS-Application)/Bug-Report.md)
+- [Traceability Matrix](https://github.com/neha581/QA-Engineer-Portfolio/blob/main/Reculta-Solutions(SaaS-Application)/RTM.md)
