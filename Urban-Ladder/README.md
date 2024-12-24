@@ -25,8 +25,8 @@
 - Addressing edge cases such as invalid product IDs(SKUs) or session timeouts.
 
 ### Artifacts
-- [Test Plan]()
-- [Test Cases]()
-- [Bug Reports]()
-- [Traceability Matrix]()
+- [Test Plan](https://github.com/neha581/QA-Engineer-Portfolio/blob/main/Urban-Ladder/Test-Plan.md)
+- [Test Cases](https://github.com/neha581/QA-Engineer-Portfolio/blob/main/Urban-Ladder/Test-Cases.md)
+- [Bug Reports](https://github.com/neha581/QA-Engineer-Portfolio/blob/main/Urban-Ladder/Bug-Report.md)
+- [Traceability Matrix](https://github.com/neha581/QA-Engineer-Portfolio/blob/main/Urban-Ladder/Traceability-Matrix.md)
 
