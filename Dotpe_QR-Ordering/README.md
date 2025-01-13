@@ -52,9 +52,8 @@ Dotpe QR-Ordering empowers small merchants, particularly in the Food & Beverage 
 ### Artifacts
 - [Test Plan](https://github.com/neha581/QA-Engineer-Portfolio/blob/main/Dotpe_QR-Ordering/Test-Plan.md)  
 - [Test Cases](https://github.com/neha581/QA-Engineer-Portfolio/blob/main/Dotpe_QR-Ordering/Test-Cases.md)  
-- [Bug Reports](https://github.com/neha581/QA-Engineer-Portfolio/blob/main/Dotpe_QR-Ordering/Bug-Reports.md)  
-- [RTM (Requirement Traceability Matrix)](https://github.com/neha581/QA-Engineer-Portfolio/blob/main/Dotpe_QR-Ordering/RTM.md)  
-- [Test Execution Report](https://github.com/neha581/QA-Engineer-Portfolio/blob/main/Dotpe_QR-Ordering/Test-Execution-Report.md)  
+- [Bug Reports](https://github.com/neha581/QA-Engineer-Portfolio/blob/main/Dotpe_QR-Ordering/Bug-Report.md)  
+- [RTM (Requirement Traceability Matrix)](https://github.com/neha581/QA-Engineer-Portfolio/blob/main/Dotpe_QR-Ordering/RTM.md)   
 
 ---
 
