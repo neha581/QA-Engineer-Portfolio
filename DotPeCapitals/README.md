@@ -113,3 +113,11 @@ The Dotpe Capitals project enhanced my expertise in manual testing by focusing o
 
 This project reinforced the importance of rigorous testing to ensure seamless functionality and a positive user experience.
 
+---
+
+## Artifacts
+- [Test Plan](https://github.com/neha581/QA-Engineer-Portfolio/blob/main/DotPeCapitals/Test-Plan.md)  
+- [Test Cases](https://github.com/neha581/QA-Engineer-Portfolio/blob/main/DotPeCapitals/Test-Cases.md)  
+- [Bug Reports](https://github.com/neha581/QA-Engineer-Portfolio/blob/main/DotPeCapitals/Bug-Report.md)  
+- [RTM (Requirement Traceability Matrix)](https://github.com/neha581/QA-Engineer-Portfolio/blob/main/DotPeCapitals/RTM.md)  
+
