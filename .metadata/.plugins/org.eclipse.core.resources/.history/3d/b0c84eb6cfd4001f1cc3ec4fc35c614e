@@ -1,0 +1,2 @@
+chrome.driver.path=path/to/chromedriver
+url=https://demoqa.com/

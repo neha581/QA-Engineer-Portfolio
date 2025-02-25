@@ -1,0 +1,21 @@
+package pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class HomePage {
+	
+	private WebDriver driver;
+	
+	private By elementButton = By.xpath("//div[@class='card-body']//h5[text()='Elements']");
+	
+	public HomePage(WebDriver driver) {
+        this.driver = driver;
+    }
+	
+	public void goToElements() {
+        driver.findElement(elementButton).click();
+    }
+
+}

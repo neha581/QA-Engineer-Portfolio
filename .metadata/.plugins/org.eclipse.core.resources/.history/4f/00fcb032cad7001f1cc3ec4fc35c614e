@@ -1,0 +1,28 @@
+package pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class ElementsPage {
+
+	private WebDriver driver;
+
+    // Locators
+    private By textBoxMenu = By.xpath("//span[text()='Text Box']");
+    private By radioButtonMenu = By.xpath("//*[@id=\"item-2\"]/span");  
+
+    // Constructor
+    public ElementsPage(WebDriver driver) {
+        this.driver = driver;
+    }
+
+    // Methods to interact with page elements
+    public void goToTextBox() {
+        driver.findElement(textBoxMenu).click();
+    }
+
+    public void goToRadioButton() {
+        driver.findElement(radioButtonMenu).click();
+    }
+}

@@ -1,0 +1,37 @@
+package pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class HomePage {
+	
+	private WebDriver driver;
+	
+	private By elementButton = By.xpath("//div[@class='card-body']//h5[text()='Elements']");
+	private By formsButton = By.xpath("");
+	private By alertsFrameAndWindows = By.xpath("");
+	private By widgets = By.xpath("");
+	private By interactions = By.xpath("");
+	
+	public HomePage(WebDriver driver) {
+        this.driver = driver;
+    }
+	
+	public void goToElements() {
+        driver.findElement(elementButton).click();
+    }
+	public void goToForms() {
+		driver.findElement(formsButton).click();
+	}
+	public void goToAlertsFrameAndWindows() {
+		driver.findElement(alertsFrameAndWindows).click();
+	}
+	public void goToWidgets() {
+		driver.findElement(widgets).click();
+	}
+	public void goToInteractions() {
+		driver.findElement(interactions).click();
+	}
+
+}

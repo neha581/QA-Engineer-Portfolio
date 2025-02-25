@@ -1,0 +1,68 @@
+package pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+
+public class WebTablesPage {
+	
+	private WebDriver driver;
+	
+	private By addButton = By.xpath("");
+	private By searchField =  By.xpath("");
+	private By editButton = By.xpath("");
+	private By deleteButton = By.xpath("");
+	private By registrationForm_Fname = By.xpath("");
+	private By registrationForm_Lname = By.xpath("");
+	private By registrationForm_email = By.xpath("");
+	private By registrationForm_age = By.xpath("");
+	private By registrationForm_salary = By.xpath("");
+	private By registrationForm_department = By.xpath("");
+	private By registrationForm_submit = By.xpath("");
+	private By registrationForm_cancel = By.xpath("");
+	
+	public WebTablesPage(WebDriver driver) {
+		this.driver = driver;
+	}
+	
+	public void addButton() {
+		driver.findElement(addButton).click();  
+	}
+	public void registrationForm_Fname() {
+		driver.findElement(registrationForm_Fname);
+	}
+	public void registrationForm_Lname() {
+		driver.findElement(registrationForm_Lname);
+	}
+	public void registrationForm_email() {
+		driver.findElement(registrationForm_age);
+	}
+	public void registrationForm_age() {
+		driver.findElement(registrationForm_email);
+	}
+	public void registrationForm_salary() {
+		driver.findElement(registrationForm_salary);
+	}
+	public void registrationForm_department() {
+		driver.findElement(registrationForm_department);
+	}
+	public void registrationForm_submit() {
+		driver.findElement(registrationForm_submit);
+	}
+	public void searchField() {
+		driver.findElement(searchField).sendKeys("test");;
+	}
+	public void editBtn() {
+        driver.findElement(editButton).click();
+	}
+	public void registrationForm_ageEdit() {
+		driver.findElement(registrationForm_email).clear();
+		driver.findElement(registrationForm_email).sendKeys("27");	
+	}
+	
+	public void deletebtn() {
+		driver.findElement(deleteButton).click();
+	}
+
+}

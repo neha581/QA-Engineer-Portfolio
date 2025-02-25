@@ -1,0 +1,29 @@
+package pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class CheckBoxPage {
+	
+	private WebDriver driver;
+	
+	private By homeDropDown = By.xpath("]");
+	private By desktopDropDown = By.xpath("");
+	private By NotesCheckBox = By.xpath("");
+	
+	public CheckBoxPage(WebDriver driver) {
+		this.driver = driver;
+	}
+	
+	public void openHomeDropdown() {
+		driver.findElement(homeDropDown).click();
+	}
+	public void openDesktopDropdown() {
+		driver.findElement(desktopDropDown).click();
+	}
+	public void selectNotes() {
+		driver.findElement(NotesCheckBox).click();
+	}
+
+}

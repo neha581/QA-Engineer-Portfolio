@@ -1,0 +1,22 @@
+package pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+public class WebTablesPage {
+	
+	private WebDriver driver;
+	
+	private By doubleClickButton = By.xpath("");
+	private By rightClickButton =  By.xpath("");
+	private By dynamicClickButton = By.xpath("");
+	
+	public WebTablesPage(WebDriver driver) {
+		this.driver = driver;
+	}
+	
+	public void ClickOnBtn() {
+		driver.findElement(doubleClickButton).click();
+	}
+
+}

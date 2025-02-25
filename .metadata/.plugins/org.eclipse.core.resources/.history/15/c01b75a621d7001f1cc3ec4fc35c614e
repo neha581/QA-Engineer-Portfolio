@@ -1,0 +1,42 @@
+package tests;
+
+import base.BaseTest;
+import org.testng.annotations.Test;
+import pages.ElementsPage;
+import pages.TextBoxPage;
+import pages.RadioButtonPage;
+import org.testng.Assert;
+
+public class ElementsTest extends BaseTest {
+
+   /* @Test
+    public void openHomePage() {
+        System.out.println("Navigated to: " + driver.getCurrentUrl());
+        // Optionally, assert the URL or title
+        assert driver.getTitle() != null : "Title should not be null";
+    } */
+    
+    @Test
+    public void testTextBoxForm() {
+        ElementsPage elementsPage = new ElementsPage(driver);
+        homePage.goToElements();
+        elementsPage.goToTextBox();
+
+        TextBoxPage textBoxPage = new TextBoxPage(driver);
+        textBoxPage.fillTextBoxForm("Neha Sharma", "nehasharma.neha.ns@gmail.com", "123 Gurgaon", "456 India");
+        textBoxPage.clickSubmit();
+
+        Assert.assertTrue(textBoxPage.isOutputNameDisplayed("Neha Sharma"), "Name is not displayed in output!");
+    }
+    
+    @Test
+    public void testRadioButton() {
+        ElementsPage elementsPage = new ElementsPage(driver);
+        elementsPage.goToRadioButton();
+
+        RadioButtonPage radioButtonPage = new RadioButtonPage(driver);
+        radioButtonPage.selectYesRadioButton();
+
+        Assert.assertTrue(radioButtonPage.isYesSelected(), "Yes radio button is not selected!");
+    }
+}
