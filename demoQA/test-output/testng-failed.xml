@@ -5,9 +5,10 @@
     <classes>
       <class name="tests.ElementsTest">
         <methods>
+          <include name="navigateToElementsPage"/>
           <include name="setUp"/>
+          <include name="testNewTabOpenOnClick"/>
           <include name="tearDown"/>
-          <include name="testRadioButton"/>
         </methods>
       </class> <!-- tests.ElementsTest -->
     </classes>

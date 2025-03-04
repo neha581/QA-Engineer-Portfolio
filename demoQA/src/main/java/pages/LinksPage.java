@@ -55,9 +55,11 @@ public class LinksPage {
         driver.findElement(notFoundLink).click();
     }
 
-    // Example method to get the text of a link (for assertions)
     public String getHomeLinkText() {
         WebElement link = driver.findElement(homeLink);
         return link.getText();
     }
+    public WebElement getHomeBtnElement() {
+		return driver.findElement(homeLink);
+	}
 } 

@@ -1,5 +1,7 @@
 package pages;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -10,7 +12,8 @@ public class WebTablesPage {
 	private WebDriver driver;
 	
 	private By addButton = By.xpath("//button[@id='addNewRecordButton']");
-	private By searchField =  By.xpath("//input[@id='searchBox']");
+	private By searchBox =  By.xpath("//input[@id='searchBox']");
+	private By tableRows = By.xpath("//div[@class='rt-tbody']//div[@class='rt-tr-group']");
 	private By editButton = By.xpath("//span[@id='edit-record-1']");
 	private By deleteButton = By.xpath("//span[@id='delete-record-1']");
 	private By registrationForm_Fname = By.xpath("//input[@id='firstName']");
@@ -30,39 +33,46 @@ public class WebTablesPage {
 		driver.findElement(addButton).click();  
 	}
 	public void registrationForm_Fname() {
-		driver.findElement(registrationForm_Fname);
+		driver.findElement(registrationForm_Fname).sendKeys("Neha");;
 	}
 	public void registrationForm_Lname() {
-		driver.findElement(registrationForm_Lname);
-	}
-	public void registrationForm_email() {
-		driver.findElement(registrationForm_age);
+		driver.findElement(registrationForm_Lname).sendKeys("Sharma");;
 	}
 	public void registrationForm_age() {
-		driver.findElement(registrationForm_email);
+		driver.findElement(registrationForm_email).sendKeys("nehasharma.neha.ns@gmail.com");;
+	}
+	public void registrationForm_email() {
+		driver.findElement(registrationForm_age).sendKeys("25");;
 	}
 	public void registrationForm_salary() {
-		driver.findElement(registrationForm_salary);
+		driver.findElement(registrationForm_salary).sendKeys("25000");;
 	}
 	public void registrationForm_department() {
-		driver.findElement(registrationForm_department);
+		driver.findElement(registrationForm_department).sendKeys("IT");;
 	}
 	public void registrationForm_submit() {
 		driver.findElement(registrationForm_submit);
 	}
-	public void searchField() {
-		driver.findElement(searchField).sendKeys("test");;
-	}
 	public void editBtn() {
         driver.findElement(editButton).click();
 	}
-	public void registrationForm_ageEdit(String newAge) {
-		driver.findElement(registrationForm_age).clear();
-		driver.findElement(registrationForm_age).sendKeys(newAge);	
-	}
-	
 	public void deletebtn() {
 		driver.findElement(deleteButton).click();
 	}
+    public void searchForEntry(String searchText) {
+        driver.findElement(searchBox).clear();
+        driver.findElement(searchBox).sendKeys(searchText);
+    }
+    public boolean isSearchResultPresent() {
+        List<WebElement> rows = driver.findElements(tableRows);
+        return rows.size() > 0;
+    }
+	public Object getAddButtonElement() {
+		return driver.findElement(addButton);
+	}
 
+	public void registrationForm_ageEdit(String string) {
+		// TODO Auto-generated method stub
+		
+	}
 }

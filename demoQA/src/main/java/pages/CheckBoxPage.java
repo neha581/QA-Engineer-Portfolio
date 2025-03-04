@@ -1,5 +1,6 @@
 package pages;
 
+import org.jspecify.annotations.Nullable;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -24,6 +25,10 @@ public class CheckBoxPage {
 	}
 	public void selectNotes() {
 		driver.findElement(NotesCheckBox).click();
+	}
+
+	public Object getHomeDropdownElement() {
+		return driver.findElement(homeDropDown);
 	}
 
 }

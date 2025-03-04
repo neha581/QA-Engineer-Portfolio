@@ -31,5 +31,7 @@ public class ButtonsPage {
 	public void dynamicClickOnBtn() {
         driver.findElement(dynamicClickButton).click();
 	}
-
+	public Object getDoubleClickBtnElement() {
+		return driver.findElement(doubleClickButton);
+	}
 }

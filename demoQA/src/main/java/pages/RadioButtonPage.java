@@ -3,6 +3,7 @@ package pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 public class RadioButtonPage {
     private WebDriver driver;
@@ -17,9 +18,15 @@ public class RadioButtonPage {
     }
 
     // Methods to interact with radio buttons
+    
+    public WebElement getYesRadioButton() {
+        return driver.findElement(yesRadioButton);
+    } 
     public void selectYesRadioButton() {
         driver.findElement(yesRadioButton).click();
     }
+    
+
 
     public boolean isYesSelected() {
         return driver.findElement(outputMessage).getText().equalsIgnoreCase("Yes");
