@@ -1,0 +1,29 @@
+pipeline {
+    agent any
+    
+    stages {
+        stage('Checkout Code') {
+            steps {
+                git 'https://github.com/neha581/QA-Engineer-Portfolio.git'
+            }
+        }
+        
+        stage('Build') {
+            steps {
+                sh 'mvn clean compile'
+            }
+        }
+
+        stage('Run Tests') {
+            steps {
+                sh 'mvn test'
+            }
+        }
+
+        stage('Generate Reports') {
+            steps {
+                sh 'mvn surefire-report:report'
+            }
+        }
+    }
+}
