@@ -10,19 +10,19 @@ pipeline {
         
         stage('Build') {
             steps {
-                sh '/opt/homebrew/bin/mvn'
+                sh '/opt/homebrew/bin/mvn clean compile'
             }
         }
 
         stage('Run Tests') {
             steps {
-                sh 'mvn test'
+                sh '/opt/homebrew/bin/mvn test'
             }
         }
 
         stage('Generate Reports') {
             steps {
-                sh 'mvn surefire-report:report'
+                sh '/opt/homebrew/bin/mvn surefire-report:report'
             }
         }
     }
