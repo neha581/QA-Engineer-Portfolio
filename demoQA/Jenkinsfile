@@ -10,19 +10,19 @@ pipeline {
         
         stage('Build') {
             steps {
-                sh '/opt/homebrew/bin/mvn clean compile'
+                sh '/opt/homebrew/bin/mvn -f demoQA/pom.xml clean compile' 
             }
         }
 
         stage('Run Tests') {
             steps {
-                sh '/opt/homebrew/bin/mvn test'
+                sh '/opt/homebrew/bin/mvn -f demoQA/pom.xml test'
             }
         }
 
         stage('Generate Reports') {
             steps {
-                sh '/opt/homebrew/bin/mvn surefire-report:report'
+                sh '/opt/homebrew/bin/mvn -f demoQA/pom.xml surefire-report:report'
             }
         }
     }
