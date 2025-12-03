@@ -1,0 +1,6 @@
+utils/TestUtils.class
+utils/ConfigReader.class
+pages/FormsPage.class
+base/BaseTest.class
+pages/ElementsPage.class
+pages/HomePage.class

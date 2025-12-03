@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.demo.selenium</groupId>
-  <artifactId>demoQA</artifactId>
+  <artifactId>selenium-pom-framework</artifactId>
   <version>0.0.1-SNAPSHOT</version>
 
   <name>demoQA</name>
@@ -28,7 +28,7 @@
         <groupId>org.testng</groupId>
         <artifactId>testng</artifactId>
         <version>7.10.2</version>
-        <scope>test</scope>
+        <scope>compile</scope> 
     </dependency>
 
     <!-- WebDriverManager -->
