@@ -17,20 +17,34 @@ public class BaseTest {
 	@BeforeMethod
 	
 	public void setUp() {
-		WebDriverManager.chromedriver().setup();
-		ChromeOptions options = new ChromeOptions();
-		options.addArguments("--start-maximized");
-		driver = new ChromeDriver(options);
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		driver.get(ConfigReader.getProperty("url"));
+		try{
+			WebDriverManager.chromedriver().setup();
+		    ChromeOptions options = new ChromeOptions();
+		    options.addArguments("--start-maximized");
+		    driver = new ChromeDriver(options);
+			int waitTime = Integer.parseInt(ConfigReader.getProperty("implicitWait"));
+            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(waitTime));
+			String url = ConfigReader.getProperty("url");
+            driver.get(url);
+
+		}catch (Exception e) {
+            e.printStackTrace();
+            throw new RuntimeException("Failed to initialize the browser setup!");
+        }
+
 	}
 	
 	@AfterMethod
 	
     public void tearDown() {
-        if (driver != null) {
-            driver.quit();
+		try {
+            if (driver != null) {
+                driver.quit();
+            }
+        } catch (Exception e) {
+            System.out.println("Exception during tearDown: " + e.getMessage());
         }
+       
     }
 	
 
