@@ -1,5 +1,6 @@
 package pages;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -8,6 +9,9 @@ import pages.TextBoxPage;
 
 public class ElementsPage {
     WebDriver driver;
+    @FindBy(xpath = "//div[contains(@class,'header-text') and text()='Elements']")
+    private WebElement elementsMainMenu;
+
     @FindBy(xpath = "//li[@id='item-0']")
     private WebElement textBoxMenu;
 
@@ -39,9 +43,18 @@ public class ElementsPage {
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
-    public TextBoxPage clickTextBox() {
-        textBoxMenu.click();
-        return new TextBoxPage(driver);
+
+    public void expandElementsMenu() {
+    ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", elementsMainMenu);
+    elementsMainMenu.click();
     }
+
+    public TextBoxPage clickTextBox() {
+        expandElementsMenu();
+    ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", textBoxMenu);
+    textBoxMenu.click();
+    return new TextBoxPage(driver);
+     }
+
 
 }

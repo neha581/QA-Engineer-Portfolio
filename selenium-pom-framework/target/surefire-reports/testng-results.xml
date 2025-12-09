@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-12-02T16:10:10 IST" name="Surefire suite" finished-at="2025-12-02T16:10:18 IST" duration-ms="7469">
+  <suite started-at="2025-12-09T18:18:50 IST" name="Surefire suite" finished-at="2025-12-09T18:19:06 IST" duration-ms="15881">
     <groups>
     </groups>
-    <test started-at="2025-12-02T16:10:10 IST" name="Surefire test" finished-at="2025-12-02T16:10:18 IST" duration-ms="7469">
+    <test started-at="2025-12-09T18:18:50 IST" name="Surefire test" finished-at="2025-12-09T18:19:06 IST" duration-ms="15881">
       <class name="tests.ElementsTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ElementsTest@971d0d8]" started-at="2025-12-02T16:10:10 IST" name="setUp" finished-at="2025-12-02T16:10:18 IST" duration-ms="7367" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ElementsTest@971d0d8]" started-at="2025-12-09T18:18:50 IST" name="setUp" finished-at="2025-12-09T18:18:59 IST" duration-ms="8891" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="openHomePage()[pri:0, instance:tests.ElementsTest@971d0d8]" started-at="2025-12-02T16:10:18 IST" name="openHomePage" finished-at="2025-12-02T16:10:18 IST" duration-ms="6" status="PASS">
+        <test-method signature="textBoxFormSubmission_shouldShowSubmittedData()[pri:0, instance:tests.ElementsTest@971d0d8]" started-at="2025-12-09T18:18:59 IST" name="textBoxFormSubmission_shouldShowSubmittedData" finished-at="2025-12-09T18:19:06 IST" duration-ms="6884" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- openHomePage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ElementsTest@971d0d8]" started-at="2025-12-02T16:10:18 IST" name="tearDown" finished-at="2025-12-02T16:10:18 IST" duration-ms="89" status="PASS">
+        </test-method> <!-- textBoxFormSubmission_shouldShowSubmittedData -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ElementsTest@971d0d8]" started-at="2025-12-09T18:19:06 IST" name="tearDown" finished-at="2025-12-09T18:19:06 IST" duration-ms="96" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

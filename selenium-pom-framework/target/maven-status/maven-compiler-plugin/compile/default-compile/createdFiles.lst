@@ -1,6 +1,9 @@
-utils/TestUtils.class
 utils/ConfigReader.class
-pages/FormsPage.class
-base/BaseTest.class
+pages/TextBoxPage.class
+pages/RadioButtonPage.class
 pages/ElementsPage.class
 pages/HomePage.class
+utils/TestUtils.class
+pages/CheckBoxPage.class
+pages/FormsPage.class
+base/BaseTest.class
