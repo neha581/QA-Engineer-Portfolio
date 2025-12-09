@@ -14,6 +14,7 @@ public class ElementsTest extends BaseTest {
     public void textBoxFormSubmission_shouldShowSubmittedData(){
             HomePage home = new HomePage(driver);
             ElementsPage elements = home.clickElementsPage();
+            elements.expandElementsMenu();
             TextBoxPage textBox = elements.clickTextBox();
         
 
