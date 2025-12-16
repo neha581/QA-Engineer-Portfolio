@@ -16,14 +16,15 @@ pipeline {
         stage('Build & Run Tests') {
             steps {
                 dir('selenium-pom-framework') {
-            sh 'mvn clean test'
-        }
+                    sh 'mvn clean test'
+                }
+            }
         }
     }
 
     post {
         always {
-             echo 'Build completed'
+            echo 'Build completed'
         }
     }
 }
