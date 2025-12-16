@@ -15,14 +15,15 @@ pipeline {
 
         stage('Build & Run Tests') {
             steps {
-                sh 'mvn clean test'
-            }
+                dir('selenium-pom-framework') {
+            sh 'mvn clean test'
+        }
         }
     }
 
     post {
         always {
-            junit 'target/surefire-reports/*.xml'
+             echo 'Build completed'
         }
     }
 }
